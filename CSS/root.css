@@ -1,0 +1,76 @@
+.color-scheme-1 {
+    --color-background: #26A3DB; /* blue */
+    --color-foreground: #FFFFFF; /* white */
+}
+.color-scheme-2 {
+    --color-background: #E9F6FB; /* light blue */
+    --color-foreground: #000309; /* black */
+}
+.color-scheme-3 {
+    --color-background: #FFFFFF; /* white */
+    --color-foreground: #000309; /* black */
+}
+.color-scheme-4 {
+    --color-background: #F9F9F9; /* gray */
+    --color-foreground: #000309; /* black */
+}
+.color-scheme-5 {
+    --color-background: none; /* gray */
+    --color-foreground: #FFFFFF; /* black */
+}
+.gradiant {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
+.primary-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+@font-face {
+    font-family: "Americana";
+    src: url("../asserts/fonts/americana\ font\ regular.otf");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Nunito-Sans";
+    src: url("../asserts/fonts/nunito-regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+:root {
+    /* font-family */
+    --text-font-family-body: "Nunito-Sans";
+    --text-font-family-heading: "Americana";
+
+    /* color */
+    --color-blue: #26A3DB;
+    --color-gray: #8A9099;
+    --color-white: #FFFFFF;
+    --color-black: #000309; 
+
+    /* font-weight */
+    --font-weight-primary: 400;
+    --font-weight-secondary: 500;
+    --font-weight-tertiary: 700;
+
+    /* font-size */
+    --font-size-heading: 36px;
+    --font-size-primary: 28px;
+    --font-size-secondary: 20px;
+    --font-size-tertiary: 18px;
+    --font-size-quaternary: 16px;
+    --font-size-quinary: 14px;
+
+    /* text-alignment */
+    --text-alignment-center: center;
+    --text-alignment-left: left;
+    --self-align-left: flex-start;
+    --self-align-right: flex-end;
+    --self-align-center: center;
+
+    /* line height */
+    --line-height-primary: 26px;
+    --line-height-secondary: 100%;
+}
