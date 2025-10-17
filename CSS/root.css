@@ -49,6 +49,9 @@
     --color-white: #FFFFFF;
     --color-black: #000309; 
     --color-light-blue: #E9F6FB;
+    --color-text-gray: #8A9099;
+    --color-gray: #d6d6d6;
+    --color-dark-gray: #757575;
 
     /* font-weight */
     --font-weight-primary: 400;
