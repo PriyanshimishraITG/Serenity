@@ -35,7 +35,7 @@ function checkAge() {
         setTimeout(() => {
             document.getElementById("welcome-popup").classList.add("hidden");
             document.body.style.overflow = "auto";
-        }, 2000);
+        }, 3000);
     };
 }
 
