@@ -7,6 +7,11 @@ window.onload = function () {
     };
 };
 document.body.style.overflow = "hidden";
+document.getElementById("age-input").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        checkAge();
+    }
+});
 function checkAge() {
     const ageInput = document.getElementById("age-input");
     const age = parseInt(ageInput.value);
