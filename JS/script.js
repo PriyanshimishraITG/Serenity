@@ -1,3 +1,41 @@
+const savedAge = localStorage.getItem("userAge");
+window.onload = function () {
+    if (savedAge) {
+        document.getElementById("age-popup").classList.add("hidden");
+        document.getElementById("welcome-popup").classList.add("hidden");
+        document.body.style.overflow = "auto";
+    };
+};
+document.body.style.overflow = "hidden";
+function checkAge() {
+    const ageInput = document.getElementById("age-input");
+    const age = parseInt(ageInput.value);
+    if (isNaN(age)) {
+        alert("Please enter a valid number!");
+        return;
+    };
+    if (age < 18 || age > 100) {
+        document.getElementById("age-popup").classList.add("hidden");
+        document.getElementById("invalid-age-popup").classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+        setTimeout(() => {
+            document.getElementById("invalid-age-popup").classList.add("hidden");
+            document.getElementById("age-popup").classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+        }, 3000);
+    } else {
+        localStorage.setItem("userAge", age);
+        document.getElementById("age-popup").classList.add("hidden");
+        document.getElementById("welcome-popup").classList.remove("hidden");
+        setTimeout(() => {
+            document.getElementById("welcome-popup").classList.add("hidden");
+            document.body.style.overflow = "auto";
+        }, 2000);
+    };
+}
+
+
+
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     pagination: {

@@ -131,6 +131,7 @@
     /* double img with text */
     .img-with-text-inner {
         flex-direction: column;
+        gap: 30px;
     }
     .img-with-text-inner-content, .text-with-img-inner-content {
         width: 100%;
@@ -144,6 +145,8 @@
         position: static;
         color: var(--color-black);
         padding: 0 40px;
+        background: var(--color-light-blue);
+        padding: 30px 10px;
     }
     .text-with-img-wrapper {
         display: flex;
